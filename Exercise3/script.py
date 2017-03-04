@@ -3,10 +3,14 @@ import matplotlib.pyplot as plt
 
 
 def compare_plots(ben_df, mal_df, name):
-    ben_df.plot(kind='line', title="{} in Benign Tumors".format(name))
+    # ben_df.plot(kind='line', title="{} in Benign Tumors".format(name))
+    plt.scatter(ben_df.index, ben_df)
+    plt.title("{} in Benign Tumors".format(name))
     plt.figure()
 
-    mal_df.plot(kind='line', title="{} in Malignant Tumors".format(name))
+    # mal_df.plot(kind='line', title="{} in Malignant Tumors".format(name))
+    plt.scatter(mal_df.index, mal_df)
+    plt.title("{} in Malignant Tumors".format(name))
     plt.figure(2)
 
     plt.show()
