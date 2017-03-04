@@ -1,5 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
+
+
+def print_stats(ben, mal):
+    print("BENIGN: STD DVN: {:.2f} --- AVG: {:.2f}".format(np.std(ben), np.mean(ben)))
+    print("MALIGN: STD DVN: {:.2f} --- AVG: {:.2f}".format(np.std(mal), np.mean(mal)))
 
 
 def compare_plots(ben_df, mal_df, name):
@@ -13,6 +19,7 @@ def compare_plots(ben_df, mal_df, name):
     plt.title("{} in Malignant Tumors".format(name))
     plt.figure(2)
 
+    print_stats(ben_df, mal_df)
     plt.show()
 
 
