@@ -2,7 +2,7 @@
 
 Making predictions on whether a tumor being benign or malignant depending on 10 different features known to determine cancer-inducing tumors.
 
-Data is taken from [UCI](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)) (<1000 rows total)
+Data is taken from [UCI](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)) (<1000 rows total).
 
 #### Features:
 
@@ -24,5 +24,5 @@ Ten real-valued features are computed for each cell nucleus:
 #### Installation
 
 ```
-$ pip install - requirements.txt
+$ pip install -r requirements.txt
 ```
